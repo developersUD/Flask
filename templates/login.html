@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body{
+            /*background-color: cadetblue;*/
+            background-image: url('/static/fondo.jpg');
+        }
+        #titulo{
+            margin: auto;
+            width: auto;
+            font-weight: bold;
+        }
+        #cajaLogin{
+            position: absolute;
+            left: 35%;
+            top: 30%;
+            background-color: rgb(160, 218, 218);
+            padding: 10px;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 10px 10px 10px rgb(20, 20, 20);
+            width:40%;
+            text-align: center;
+        }
+        .boton{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function validar(){
+            alert("Botón pulsado")
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="/validar">
+        <div id="cajaLogin">
+            <p id="titulo">BIENVENIDO AL SISTEMA</p>
+            
+            <p>Usuario: <input type="text" name="usuario"></p>
+            <p>Contraseña: <input type="password" name="password"></p>
+            <p><input type="submit" class="boton" value="INGRESAR"></p>
+    
+        </div>
+    </form>
+</body>
+</html>

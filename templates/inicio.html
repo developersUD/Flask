@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio del sistema</title>
+    <script>
+        /*Abrir nueva ventana en la misma pestaña que estoy*/
+        function ventanaLogin(){
+            window.open('/login','_self');
+        }
+        /*Abrir nueva ventana en la misma pestaña que estoy*/
+        function ventanaRegistrar(){
+            window.open('/registro','_self');
+        }
+    </script>
+</head>
+<body>
+    <hi>BIENVENIDO</hi>
+    <p><input type="button" value="Login" onclick="ventanaLogin()"</p>
+    <p><input type="button" value="Registrarme" onclick="ventanaRegistrar()"</p>
+</body>
+</html>
