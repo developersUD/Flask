@@ -18,6 +18,9 @@ from CodigoArduino import CodigoArduino
 app = Flask(__name__)
 
 
+app.config["TEMPLATES_AUTO_RELOAD"] = True
+
+
 @app.route('/')
 def inicio():
     return render_template('inicio.html')

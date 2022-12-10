@@ -5,3 +5,12 @@ A project which read BPM using pulse sensor from Arduino and python scripting to
 LiquidCrystal_V1.2.1
 
 Python pyserial
+
+
+# Instalar 
+
+> python3 -m pip install serial  
+ 
+ Instalar flask
+
+> >python3 -m pip install flask 
